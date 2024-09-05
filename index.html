@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel John">
+    <meta name="description" content="Personal Description Page for Assignment Submission">
+    <link rel="stylesheet" href="style.css">
+    <title>About Samuel John</title>
+</head>
+<body>
+    <header>
+        <h1>Samuel John</h1>
+    </header>
+    <main id="main">
+        <section id="hero">
+            <p>
+                My name is Samuel John. I am a final year student of Mar Baselios College of Engineering and Technology, currently pursuing B.Tech in CSE.
+            </p>
+            <a href="https://www.linkedin.com/in/samuel-john-329b08246/" target="_blank"><img src="photo.jpeg" id="photo" alt="Samuel John"></a>
+        </section>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am an aspiring software engineer with a passion for technology and programming. I have experience in web development and software development. I am always eager to learn new technologies and hone my skills.
+            </p>
+            <div class="lists">
+                <div>
+                    <h3>Strengths:</h3>
+                    <ul>
+                        <li>Curiosity</li>
+                        <li>Interest</li>
+                        <li>Dedication to Reliability</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Weaknesses:</h3>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Interest</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Bucket List</h2>
+            <table>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Learn Zig</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Get an Internship</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Contribute to an open-source project</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Complete this Website</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Update This Table</td>
+                    <td>On Hold</td>
+                </tr>
+            </table>
+        </section>
+        <section id="embeds">
+            <iframe src="https://www.youtube.com/embed/T9GFyZ5LREQ" title="QuickSilver Kitchen Scene - X-Men: Days Of Future Past (2014) Movie Clip HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <audio src="goldenhour.mp3" controls></audio>
+        </section>
+    </main>
+    <footer>
+        <p>2024 Samuel John. No rights reserved.</p>
+    </footer>
+    <script>
+        // I DO NOT CONDONE THIS. USE CSS FOR STYLING AND TRANSITION
+        document.getElementById('photo').addEventListener('mouseenter', function() {
+            document.body.style.backgroundColor = '#222222';
+        });
+        document.getElementById('photo').addEventListener('mouseleave', function() {
+            document.body.style.backgroundColor = '#080808';
+        });
+        const button = document.createElement('button');
+        button.addEventListener('click', function() {
+            alert('DO NOT USE JAVASCRIPT FOR CHANGING THE BACKGROUND COLOR! USE CSS!!');
+        });
+        button.innerText = 'Click Me!';
+        button.id = 'jsbutton'
+        document.getElementById('main').appendChild(button);
+    </script>
+</body>
+</html>
